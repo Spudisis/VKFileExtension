@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "files VK",
+  "description": "Удобный просмотр файлов",
+  "version": "1.0.0",
+
+  "content_scripts": [
+    {
+      "matches": ["https://vk.com/*", "https://vk.com/docs"],
+      "js": ["script-min.js"],
+      "css": ["style-min.css"],
+      "run_at": "document_end"
+    }
+  ],
+  "permissions": ["activeTab"]
+}
